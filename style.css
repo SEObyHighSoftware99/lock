@@ -3218,7 +3218,7 @@ body {
     transform: rotate(360deg);
   }
 }
-/* SEO Popup */
+/* ===== SEO Audit Popup Styles ===== */
 .seo-popup {
   position: fixed;
   top: 0;
