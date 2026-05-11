@@ -490,6 +490,70 @@
 
     <div class="custom-cursor"></div>
     <script src="script.js?v=2"></script>
+    <!-- Popup Overlay -->
+<div id="seoPopup" class="popup-overlay">
+  <div class="popup-box">
+
+    <button class="close-btn" onclick="closePopup()" aria-label="Close Popup">×</button>
+
+    <h1>Get your free <br> SEO audit</h1>
+
+    <p>
+      Contact AlgorithmOptix for a free audit on your website,
+      on-page SEO, off-page SEO, backlinks, GBP, and technical improvements.
+    </p>
+
+    <div class="number-box">
+      <span>📩</span>
+      <strong>01302149621</strong>
+
+      <small>
+        Click to open WhatsApp, use call now, or copy the number below.
+      </small>
+    </div>
+
+    <div class="btn-group">
+
+      <a href="https://wa.me/8801302149621"
+         target="_blank"
+         class="btn whatsapp">
+         WhatsApp
+      </a>
+
+      <a href="tel:+8801302149621"
+         class="btn call">
+         Call Now
+      </a>
+
+      <button class="btn copy" onclick="copyNumber()">
+        Copy Number
+      </button>
+
+    </div>
+
+    <button class="close-bottom" onclick="closePopup()">
+      Close
+    </button>
+
+  </div>
+</div>
+    <script>
+function closePopup(){
+  document.getElementById("seoPopup").style.display = "none";
+}
+
+function copyNumber(){
+  navigator.clipboard.writeText("01302149621");
+  alert("Number Copied!");
+}
+
+// Auto Popup After 2 Seconds
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("seoPopup").style.display = "flex";
+  }, 2000);
+});
+</script>
 </body>
 
 </html>
