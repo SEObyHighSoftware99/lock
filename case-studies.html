@@ -22,7 +22,7 @@
 
     <!-- Canonical URL -->
     <link rel="canonical"
-        href="https://algorithmoptixit.futureall.xyz/case-studies.html">
+        href="https://www.algorithmoptix-it.xyz/case-studies.html">
 
     <!-- Open Graph SEO -->
     <meta property="og:title"
@@ -32,10 +32,10 @@
         content="Explore real SEO case studies and digital marketing growth stories powered by AlgorithmOptix IT.">
 
     <meta property="og:image"
-        content="https://algorithmoptixit.futureall.xyz/seo-banner.jpg">
+        content="https://www.algorithmoptix-it.xyz/seo-banner.jpg">
 
     <meta property="og:url"
-        content="https://algorithmoptixit.futureall.xyz/case-studies.html">
+        content="https://www.algorithmoptix-it.xyz/case-studies.html">
 
     <meta property="og:type"
         content="website">
@@ -51,7 +51,7 @@
         content="View real SEO growth case studies, ranking improvements, and digital marketing success stories from AlgorithmOptix IT.">
 
     <meta name="twitter:image"
-        content="https://algorithmoptixit.futureall.xyz/seo-banner.jpg">
+        content="https://www.algorithmoptix-it.xyz/seo-banner.jpg">
     <!-- Favicon -->
   <link rel="icon" href="images/New.png" type="image/png">
   <link rel="apple-touch-icon" href="images/New.png">
@@ -62,7 +62,7 @@
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       "name": "AlgorithmOptix IT Case Studies",
-      "url": "https://algorithmoptixit.futureall.xyz/case-studies.html",
+      "url": "https://www.algorithmoptix-it.xyz/case-studies.html",
       "description": "SEO and digital marketing case studies showcasing traffic growth, ranking improvements, and lead generation results by AlgorithmOptix IT."
     }
     </script>
@@ -75,6 +75,205 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Fevicon New.png">
     <link rel="shortcut icon" href="/Fevicon New.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Case studies page custom body layout */
+        .seo-client-section {
+            background: #ffffff;
+            padding: 70px 0 58px;
+        }
+
+        .seo-client-title {
+            text-align: center;
+            margin: 0 0 42px;
+            color: #000;
+            font-size: clamp(30px, 3.1vw, 46px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: .2px;
+        }
+
+        .seo-client-grid {
+            width: min(1250px, 100%);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px 15px;
+            align-items: start;
+        }
+
+        .seo-client-card {
+            background: #96d400;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;
+        }
+
+        .seo-client-card.small {
+            height: 124px;
+        }
+
+        .seo-client-card.large {
+            height: 238px;
+        }
+
+        .seo-client-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .seo-card-section {
+            background: #ffffff;
+            padding: 64px 0 78px;
+        }
+
+        .seo-case-card-grid {
+            width: min(1250px, 100%);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .seo-case-post {
+            background: #ffffff;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
+            transition: transform .25s ease, box-shadow .25s ease;
+            overflow: hidden;
+        }
+
+        .seo-case-post:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .12);
+        }
+
+        .seo-case-thumb {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .seo-case-content {
+            padding: 17px 10px 10px;
+        }
+
+        .seo-case-meta {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 9px;
+            margin-bottom: 18px;
+            color: #000;
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        .seo-case-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .seo-case-title {
+            margin: 0 0 16px;
+            color: #000;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1.18;
+        }
+
+        .seo-case-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .seo-case-title a:hover {
+            color: #86c900;
+        }
+
+        .seo-case-text {
+            margin: 0 0 22px;
+            color: #101010;
+            font-size: 19px;
+            line-height: 1.32;
+        }
+
+        .seo-read-more {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0 16px;
+            border-radius: 8px;
+            background: #91ce00;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 800;
+            transition: background .25s ease, transform .25s ease;
+        }
+
+        .seo-read-more:hover {
+            background: #73a900;
+            transform: translateY(-2px);
+            color: #ffffff;
+        }
+
+        @media (max-width: 1100px) {
+            .seo-client-grid,
+            .seo-case-card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .seo-client-section {
+                padding: 45px 0 38px;
+            }
+
+            .seo-client-grid,
+            .seo-case-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .seo-client-card.small,
+            .seo-client-card.large {
+                height: 150px;
+            }
+
+            .seo-case-thumb {
+                height: 155px;
+            }
+
+            .seo-case-title {
+                font-size: 21px;
+            }
+
+            .seo-case-text {
+                font-size: 17px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .seo-client-grid,
+            .seo-case-card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .seo-client-card.small,
+            .seo-client-card.large {
+                height: 185px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -122,51 +321,124 @@
         </div>
     </header>
 
-    <section class="section">
-        <div class="container text-center reveal">
-            <span class="badge">Case Studies</span>
-            <h1 class="section-title">Proof That Better Systems Create <span class="gradient-text">Better Results</span>
-            </h1>
-        </div>
-    </section>
-
-    <section class="section bg-light">
+    <section class="seo-client-section">
         <div class="container">
-            <div class="case-study reveal" style="margin-bottom:28px;">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiixOuFaYR2Dm2MZu_03I_kql7aV_Yr8bnuBsoOIaL0gwUtbkZL_3bVAwfn_08xqPW6NlQZevaWfiahJx840DHLHD2Z31kqIzvW5dx2m7IHfbjFWnru2dK6VYXGzhzvYEQusd_psEcLSsjg0TRZtsagAFomHTtjN6mbfWWRdINtJQGnk8HEqsqSE0m3SRzE/s16000/urban-rugs-results.webp"
-                    alt="">
-                <div>
-                    <span class="badge">Local Business SEO</span>
-                    <h2>AI SEO Lead Generation Campaign</h2>
-                    <p>A service-based business struggled with low-quality leads, poor website trust, and weak Google visibility. Our team rebuilt the SEO structure, optimized landing pages, improved local SEO signals, and created a stronger conversion system.</p>
-                    <ul class="result-list">
-                        <li>✔ Improved Google visibility with AI SEO optimization</li>
-                        <li>✔ Higher quality inquiries from search traffic</li>
-                        <li>✔ Better conversion-focused landing page structure</li>
-                        <li>✔ Stronger WhatsApp and CTA placements</li>
-                        <li>✔ Improved website trust and user experience</li>
-                    </ul>
-                </div>
-            </div>
+            <h1 class="seo-client-title">Trusted By Businesses Worldwide – My SEO Clients</h1>
 
-            <div class="case-study reveal">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBzI3nTP6IPiuakE0A2CFPi9-zF-p_BGA0BWUQ4voNURGyW3qM4D-b1mJDGjKBEDsEVdB_ZNIFTRIZOfy0lOLw5xU-FgUFaF87ityQBmDrXtAv6rBXFGNqu9IozTvNrC4f07DqbpqLXyURi8rM9qrHZdX2TRnuuu1c4Iy0YA4AXcnMIfqTFROZlH1HV-xR/s16000/akkad-consultants-results.webp"
-                    alt="">
-                <div>
-                    <span class="badge">Technical SEO</span>
-                    <h2>Website Performance & SEO Optimization</h2>
-                    <p>A business website had slow loading speed, poor structure, and low search visibility. AlgorithmOptix redesigned the website experience, improved Core Web Vitals, and optimized technical SEO.</p>
-                    <ul class="result-list">
-                        <li>✔ Faster loading speed and performance optimization</li>
-                        <li>✔ Better mobile SEO experience</li>
-                        <li>✔ Improved Core Web Vitals score</li>
-                        <li>✔ Stronger internal linking structure</li>
-                        <li>✔ Enhanced indexing and crawlability</li>
-                    </ul>
+            <div class="seo-client-grid">
+                <div class="seo-client-card small">
+                    <img src="images/akkad.png" alt="Akkad Consultants logo">
+                </div>
+                <div class="seo-client-card small">
+                    <img src="images/jachtvloeren-enzo.png" alt="Jachtvloeren-enzo logo">
+                </div>
+                <div class="seo-client-card small">
+                    <img src="images/hajj-safe.png" alt="Hajj Safe logo">
+                </div>
+                <div class="seo-client-card small">
+                    <img src="images/amway.png" alt="Amway logo">
+                </div>
+                <div class="seo-client-card small">
+                    <img src="images/nordic-floors.png" alt="Nordic Floors logo">
+                </div>
+
+                <div class="seo-client-card large">
+                    <img src="images/fundusa.png" alt="FundUSA Corp logo">
+                </div>
+                <div class="seo-client-card large">
+                    <img src="images/urban-rugs-uk.png" alt="Urban Rugs UK logo">
+                </div>
+                <div class="seo-client-card large">
+                    <img src="images/tdm.png" alt="TDM logo">
+                </div>
+                <div class="seo-client-card large">
+                    <img src="images/mysalahmat.png" alt="MySalahMat logo">
+                </div>
+                <div class="seo-client-card large">
+                    <img src="images/barking-heads.png" alt="Barking Heads logo">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="seo-card-section">
+        <div class="container">
+            <div class="seo-case-card-grid">
+                <article class="seo-case-post">
+                    <a href="#">
+                        <img class="seo-case-thumb" src="images/casey.png" alt="MySalahMat SEO Growth Success Case Study -2">
+                    </a>
+                    <div class="seo-case-content">
+                        <div class="seo-case-meta">
+                            <span><i class="fa-regular fa-circle-user"></i> admin</span>
+                            <span><i class="fa-solid fa-calendar"></i> June 7, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7:49 pm</span>
+                        </div>
+                        <h2 class="seo-case-title">
+                            <a href="#">MySalahMat SEO Growth Success Case Study -2</a>
+                        </h2>
+                        <p class="seo-case-text">Since the implementation of the SEO strategies, MySalahMat has experienced significant growth in both organic traffic and search visibility.</p>
+                        <a class="seo-read-more" href="#">Read More</a>
+                    </div>
+                </article>
+
+                <article class="seo-case-post">
+                    <a href="#">
+                        <img class="seo-case-thumb" src="images/urban.png" alt="Urban Rugs UK SEO Growth Success Case Study 2">
+                    </a>
+                    <div class="seo-case-content">
+                        <div class="seo-case-meta">
+                            <span><i class="fa-regular fa-circle-user"></i> admin</span>
+                            <span><i class="fa-solid fa-calendar"></i> June 7, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7:49 pm</span>
+                        </div>
+                        <h2 class="seo-case-title">
+                            <a href="#">Urban Rugs UK SEO Growth Success Case Study 2</a>
+                        </h2>
+                        <p class="seo-case-text">Based on the screenshots provided, urbanrugsuk.com achieved substantial SEO progress.</p>
+                        <a class="seo-read-more" href="#">Read More</a>
+                    </div>
+                </article>
+
+                <article class="seo-case-post">
+                    <a href="#">
+                        <img class="seo-case-thumb" src="images/urban.png" alt="MySalahMat SEO Growth Success Case Study">
+                    </a>
+                    <div class="seo-case-content">
+                        <div class="seo-case-meta">
+                            <span><i class="fa-regular fa-circle-user"></i> admin</span>
+                            <span><i class="fa-solid fa-calendar"></i> June 7, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7:44 pm</span>
+                        </div>
+                        <h2 class="seo-case-title">
+                            <a href="#">MySalahMat SEO Growth Success Case Study</a>
+                        </h2>
+                        <p class="seo-case-text">Since the implementation of the SEO strategies, MySalahMat has experienced significant growth in both organic traffic and search visibility.</p>
+                        <a class="seo-read-more" href="#">Read More</a>
+                    </div>
+                </article>
+
+                <article class="seo-case-post">
+                    <a href="#">
+                        <img class="seo-case-thumb" src="images/urban.png" alt="Urban Rugs UK SEO Growth Success Case Study">
+                    </a>
+                    <div class="seo-case-content">
+                        <div class="seo-case-meta">
+                            <span><i class="fa-regular fa-circle-user"></i> admin</span>
+                            <span><i class="fa-solid fa-calendar"></i> June 7, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7:44 pm</span>
+                        </div>
+                        <h2 class="seo-case-title">
+                            <a href="#">Urban Rugs UK SEO Growth Success Case Study</a>
+                        </h2>
+                        <p class="seo-case-text">Based on the screenshots provided, urbanrugsuk.com achieved substantial SEO progress.</p>
+                        <a class="seo-read-more" href="#">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
 <footer class="footer">
         <div class="container">
             <div class="footer-grid">
