@@ -79,7 +79,16 @@
 .seo-case-text{font-size:16px;line-height:1.65;color:#222;flex:1;margin-bottom:20px;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
 .seo-read-more{display:inline-block;background:#8CC400;color:#fff;padding:11px 22px;border-radius:6px;text-decoration:none;font-weight:700}
 @media(max-width:1100px){.seo-case-card-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.seo-case-card-grid{grid-template-columns:1fr}}</style></head>
+@media(max-width:768px){.seo-case-card-grid{grid-template-columns:1fr}}</style>
+<style>
+.running-status{display:inline-flex;align-items:center;gap:8px;background:#e9fff2;color:#0f9d58;padding:6px 12px;border-radius:30px;font-size:13px;font-weight:700;margin-bottom:15px}
+.live-dot{width:10px;height:10px;border-radius:50%;background:#00d26a;position:relative}
+.live-dot:after{content:'';position:absolute;left:50%;top:50%;width:10px;height:10px;background:#00d26a;border-radius:50%;transform:translate(-50%,-50%);animation:livePulse 1.5s infinite}
+@keyframes livePulse{0%{transform:translate(-50%,-50%) scale(1);opacity:1}100%{transform:translate(-50%,-50%) scale(3.5);opacity:0}}
+.portfolio-card{position:relative}
+.project-badge{position:absolute;top:12px;right:12px;background:#10b981;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:6px;z-index:2}
+</style>
+</head>
 <body>
 <!-- Loader -->
 <div id="page-loader">
@@ -210,36 +219,27 @@
 </div>
 <div class="grid-3">
 <div class="card portfolio-card reveal">
-<img alt="SEO Campaign" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
-<div class="portfolio-content">
+<div class="project-badge"><span class="live-dot"></span>Running Work</div><img alt="SEO Campaign" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+<div class="portfolio-content"><div class="running-status"><span class="live-dot"></span>Running Work</div>
 <span class="tag">SEO</span>
 <h3>National SEO Campaign</h3>
-<p>
-                            Increased organic traffic using AI SEO optimization,
-                            technical improvements, and content clustering.
-                        </p>
+<p>Currently improving technical SEO, content optimization and internal linking.</p>
 </div>
 </div>
 <div class="card portfolio-card reveal">
-<img alt="Content Marketing" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
-<div class="portfolio-content">
+<div class="project-badge"><span class="live-dot"></span>Running Work</div><img alt="Content Marketing" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+<div class="portfolio-content"><div class="running-status"><span class="live-dot"></span>Running Work</div>
 <span class="tag">Content</span>
 <h3>AI Content Authority</h3>
-<p>
-                            Built topical authority with optimized blog content
-                            and internal linking systems.
-                        </p>
+<p>Building topical authority with AI-powered content strategy.</p>
 </div>
 </div>
 <div class="card portfolio-card reveal">
-<img alt="Website Development" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
-<div class="portfolio-content">
+<div class="project-badge"><span class="live-dot"></span>Running Work</div><img alt="Website Development" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+<div class="portfolio-content"><div class="running-status"><span class="live-dot"></span>Running Work</div>
 <span class="tag">Web Design</span>
 <h3>SEO Business Website</h3>
-<p>
-                            Designed a premium SEO-friendly business website
-                            with strong Core Web Vitals performance.
-                        </p>
+<p>Developing an SEO-friendly business website with Core Web Vitals optimization.</p>
 </div>
 </div>
 </div>
