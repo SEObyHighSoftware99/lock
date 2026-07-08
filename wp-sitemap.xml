@@ -35,5 +35,9 @@
         <loc>https://www.algorithmoptix-it.xyz/contact.html</loc>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://www.algorithmoptix-it.xyz/ai-seo-strategy.html</loc>
+        <priority>0.7</priority>
+    </url>
 
 </urlset>
