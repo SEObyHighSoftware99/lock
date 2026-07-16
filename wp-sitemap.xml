@@ -63,4 +63,8 @@
         <loc>https://www.algorithmoptix-it.xyz/llm-optimization-guide.html</loc>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://www.algorithmoptix-it.xyz/how-to-rank-in-AI-answers.html</loc>
+        <priority>0.7</priority>
+    </url>
 </urlset>
